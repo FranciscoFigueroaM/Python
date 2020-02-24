@@ -19,8 +19,8 @@ class Comuna(object):
         self.cut = cut
 
 
-def nombreComuna(e):
-    return e['nombre']
+def nombreComuna(comuna):
+    return comuna['nombre']
 
 
 @hug.get()
