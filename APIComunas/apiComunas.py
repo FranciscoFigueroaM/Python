@@ -19,7 +19,7 @@ class Comuna(object):
         self.cut = cut
 
 
-def myFunc(e):
+def nombreComuna(e):
     return e['nombre']
 
 
@@ -694,7 +694,7 @@ def comunasApi():
         {"nombre": "Peñaflor", "cut": 13605, "provincia": "Talagante",
             "región": "Metropolitana de Santiago"},
     ]
-    comunas.sort(key=myFunc)
+    comunas.sort(key=nombreComuna)
     return comunas
 
 
